@@ -130,6 +130,9 @@ module.exports = {
         screw_ie8: true
       }
     }),
-    new ExtractTextPlugin('[name].[contenthash:8].css')
+    new ExtractTextPlugin('[name].[contenthash:8].css'),
+    new webpack.ProvidePlugin({
+      "fetch": "isomorphic-fetch",
+    })
   ]
 };

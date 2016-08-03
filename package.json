@@ -33,6 +33,7 @@
     "gzip-size": "3.0.0",
     "html-webpack-plugin": "2.22.0",
     "json-loader": "0.5.4",
+    "json-server": "^0.8.17",
     "opn": "4.0.2",
     "postcss-loader": "0.9.1",
     "promise": "7.1.1",
@@ -55,7 +56,8 @@
   },
   "scripts": {
     "start": "node ./scripts/start.js",
-    "build": "node ./scripts/build.js"
+    "build": "node ./scripts/build.js",
+    "api": "node ./scripts/api.js"
   },
   "eslintConfig": {
     "extends": "./config/eslint.js"
