@@ -1,0 +1,14 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "text": "Play with elm",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "text": "Set up backend",
+      "completed": false
+    }
+  ]
+}
