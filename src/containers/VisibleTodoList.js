@@ -7,9 +7,9 @@ const getVisibleTodos = (todos, filter) => {
     case 'SHOW_ALL':
       return todos
     case 'SHOW_COMPLETED':
-      return todos.filter(t => t.completed)
+      return todos.filter(t => t.get('completed'))
     case 'SHOW_ACTIVE':
-      return todos.filter(t => !t.completed)
+      return todos.filter(t => !t.get('completed'))
     default:
       return todos
   }
@@ -23,8 +23,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onTodoClick: (id) => {
-      dispatch(toggleTodo(id))
+    onTodoClick: (todo) => {
+      dispatch(toggleTodo(todo))
     }
   }
 }
